@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cobertura de Casamento | MTHS Films</title>
+  <meta name="description" content="Pacotes de cobertura cinematográfica de casamento — Matheus Films" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    /* --- HIERARQUIA VISUAL DOS PACOTES (Efeito Dourado Progressivo) --- */
+    
+    /* Básico: Mais discreto e neutro */
+    .package-card {
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    /* Premium: O Destaque de Vendas (Brilho e borda elegantes) */
+    .card-premium {
+      border: 1px solid rgba(212, 175, 55, 0.4) !important;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.2) !important;
+    }
+    
+    /* Master: Exclusividade Máxima (Borda forte, brilho externo maior e leve brilho interno) */
+    .card-master {
+      border: 1px solid rgba(212, 175, 55, 0.8) !important;
+      box-shadow: 0 0 45px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(212, 175, 55, 0.1) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide-nav" id="slideNav">
+    <button class="nav-arrow nav-prev" id="prevBtn" aria-label="Slide anterior" disabled>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <div class="slide-dots" id="slideDots"></div>
+    <button class="nav-arrow nav-next" id="nextBtn" aria-label="Próximo slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
+
+  <div class="slides-wrapper" id="slidesWrapper">
+
+    <section class="slide slide-cover" data-bg="assets/images/imagesamira.jpeg">
+      <div class="slide-bg-image"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <div class="brand-badge fade-up">
+          <span class="brand-line"></span>
+          <span class="brand-text">MTHS FILMS</span>
+          <span class="brand-line"></span>
+        </div>
+        <h1 class="cover-title fade-up delay-1">
+          Cobertura de<br><em>Casamento</em>
+        </h1>
+        <div class="gold-divider fade-up delay-2"></div>
+        <p class="cover-subtitle fade-up delay-3">Transformamos o dia mais importante da sua vida em cinema</p>
+        <div class="scroll-hint fade-up delay-4">
+          <span>Deslize para ver os pacotes</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide-intro" data-bg="assets/images/image.jpg">
+      <div class="slide-bg-image"></div>
+      <div class="slide-overlay overlay-strong"></div>
+      <div class="slide-content">
+        <span class="section-tag fade-up">NOSSA PROPOSTA</span>
+        <h2 class="intro-title fade-up delay-1">Cada casamento é <em>único</em>.<br>Seu filme também será.</h2>
+        <div class="gold-divider fade-up delay-2"></div>
+        <p class="intro-text fade-up delay-3">
+          Com um olhar cinematográfico e sensível, capturo a essência do seu grande dia — 
+          cada olhar, cada emoção, cada detalhe que merece ser eternizado. 
+          Mais do que um registro, crio uma obra que vocês vão querer assistir para sempre.
+        </p>
+      </div>
+    </section>
+
+    <section class="slide slide-package" data-bg="assets/images/image1.jpg">
+      <div class="slide-bg-image"></div>
+      <div class="slide-overlay overlay-strong"></div>
+      <div class="slide-content">
+        <div class="package-card">
+          <div class="package-header">
+            <span class="package-tier fade-up">PACOTE</span>
+            <h2 class="package-name fade-up delay-1">Básico</h2>
+            <div class="price-tag fade-up delay-2">
+              <span class="price-currency">R$</span>
+              <span class="price-value">1.690</span>
+            </div>
+          </div>
+          <div class="gold-divider fade-up delay-2"></div>
+          <ul class="package-list fade-up delay-3">
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>4 horas de cobertura</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cobertura da cerimônia e festa</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Filme curto (4 a 7 minutos)</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Prévia para redes sociais (até 40 segundos)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide-package slide-premium" data-bg="assets/images/image2.jpg">
+      <div class="slide-bg-image"></div>
+      <div class="slide-overlay overlay-strong"></div>
+      <div class="slide-content">
+        <div class="package-card card-premium">
+          <div class="premium-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            MAIS ESCOLHIDO
+          </div>
+          <div class="package-header">
+            <span class="package-tier fade-up">PACOTE</span>
+            <h2 class="package-name fade-up delay-1">Premium</h2>
+            <div class="price-tag fade-up delay-2">
+              <span class="price-currency">R$</span>
+              <span class="price-value">2.590</span>
+            </div>
+          </div>
+          <div class="gold-divider fade-up delay-2"></div>
+          <ul class="package-list fade-up delay-3">
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>5 horas de cobertura + 1h30 de making of</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Making of da noiva</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cobertura da cerimônia e festa</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Filme longo (8 a 10 minutos)</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Teaser (até 1 minuto)</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cerimônia na íntegra</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide-package slide-master" data-bg="assets/images/image3.jpg">
+      <div class="slide-bg-image"></div>
+      <div class="slide-overlay overlay-strong"></div>
+      <div class="slide-content">
+        <div class="package-card card-master">
+          <div class="master-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5z"/><path d="M19 19H5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2z"/></svg>
+            EXPERIÊNCIA COMPLETA
+          </div>
+          <div class="package-header">
+            <span class="package-tier fade-up">PACOTE</span>
+            <h2 class="package-name fade-up delay-1">Master</h2>
+            <div class="price-tag fade-up delay-2">
+              <span class="price-currency">R$</span>
+              <span class="price-value">3.490</span>
+            </div>
+          </div>
+          <div class="gold-divider fade-up delay-2"></div>
+          <ul class="package-list fade-up delay-3">
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>6 horas de cobertura + making ofs</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Making of dos noivos</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Ensaio pré-casamento</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cobertura da cerimônia e festa</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Filme longo (10 a 20 minutos)</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Teaser (1 a 2 minutos)</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cerimônia na íntegra</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Pacote para redes sociais</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide-extras" data-bg="assets/images/image1.jpg">
+      <div class="slide-bg-image"></div>
+      <div class="slide-overlay overlay-strong"></div>
+      <div class="slide-content">
+        <span class="section-tag fade-up">PERSONALIZE SUA EXPERIÊNCIA</span>
+        <h2 class="extras-title fade-up delay-1">Serviços <em>Adicionais</em></h2>
+        <div class="gold-divider fade-up delay-2"></div>
+        <div class="extras-grid fade-up delay-3">
+          <div class="extra-item">
+            <div class="extra-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h4>Pré-Wedding</h4>
+            <p class="extra-price">R$ 750</p>
+          </div>
+          <div class="extra-item">
+            <div class="extra-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>Drone na cerimônia</h4>
+            <p class="extra-price">R$ 500</p>
+          </div>
+          <div class="extra-item">
+            <div class="extra-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><polygon points="10 8 16 10 10 12"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
+            </div>
+            <h4>Cerimônia na íntegra</h4>
+            <p class="extra-price">R$ 600</p>
+          </div>
+          <div class="extra-item">
+            <div class="extra-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+            <h4>Teaser (1 a 2 min)</h4>
+            <p class="extra-price">R$ 400</p>
+          </div>
+          <div class="extra-item">
+            <div class="extra-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <h4>Pacote Redes Sociais</h4>
+            <p class="extra-desc">3 vídeos verticais</p>
+            <p class="extra-price">R$ 500</p>
+          </div>
+          <div class="extra-item">
+            <div class="extra-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h4>Hora extra</h4>
+            <p class="extra-desc">de cobertura</p>
+            <p class="extra-price">R$ 400</p>
+          </div>
+        </div>
+        <p class="extras-note fade-up delay-4">*Imagens aéreas sujeitas às condições climáticas e restrições do local.</p>
+      </div>
+    </section>
+
+    <section class="slide slide-cta" data-bg="assets/images/imagesamira.jpeg">
+      <div class="slide-bg-image"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <div class="brand-badge fade-up">
+          <span class="brand-line"></span>
+          <span class="brand-text">MTHS FILMS</span>
+          <span class="brand-line"></span>
+        </div>
+        <h2 class="cta-title fade-up delay-1">Vamos eternizar<br>a sua <em>história</em>?</h2>
+        <div class="gold-divider fade-up delay-2"></div>
+        <p class="cta-subtitle fade-up delay-3">Entre em contato e solicite seu orçamento personalizado</p>
+        <a href="https://wa.me/5527997358236" target="_blank" rel="noopener noreferrer" class="cta-button fade-up delay-4">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+          </svg>
+          Solicitar Orçamento
+        </a>
+        <div class="cta-social fade-up delay-4">
+          <a href="https://instagram.com/mthsfilms_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <span class="social-handle">@mthsfilms_</span>
+        </div>
+        <p class="cta-footer fade-up delay-4">© 2026 Matheus Films · Todos os direitos reservados</p>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="keyboard-hint" id="keyboardHint">
+    Use <kbd>←</kbd> <kbd>→</kbd> para navegar
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
